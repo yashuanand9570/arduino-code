@@ -1,9 +1,12 @@
 // defining the pin locations
 int motor1pin1 = 13;
 int motor1pin2 = 12;
-
 int motor2pin1 = 11;
-int   motor2pin2 = 10;
+int motor2pin2 = 10;
+int motor3pin1 = 9;
+int motor3pin2 = 8;
+int motor4pin1 = 7;
+int motor4pin2 = 6;
 
 void setup() {
   // put your setup code here, to run once:
@@ -11,6 +14,10 @@ void setup() {
   pinMode(motor1pin2, OUTPUT);
   pinMode(motor2pin1,   OUTPUT);
   pinMode(motor2pin2, OUTPUT);
+  pinMode(motor3pin1, OUTPUT);
+  pinMode(motor3pin2, OUTPUT);
+  pinMode(motor4pin1,   OUTPUT);
+  pinMode(motor4pin2, OUTPUT);
 }
 
 void loop() {
@@ -19,8 +26,14 @@ void loop() {
   digitalWrite(motor1pin1,   HIGH);
   digitalWrite(motor1pin2, LOW);
 
-  digitalWrite(motor2pin1, HIGH);
+   digitalWrite(motor2pin1, HIGH);
    digitalWrite(motor2pin2, LOW);
+
+  digitalWrite(motor3pin1,   HIGH);
+  digitalWrite(motor3pin2, LOW);
+
+  digitalWrite(motor4pin1, HIGH);
+   digitalWrite(motor4pin2, LOW);
   delay(3000);
 
   digitalWrite(motor1pin1,   LOW);
@@ -28,5 +41,11 @@ void loop() {
 
   digitalWrite(motor2pin1, LOW);
    digitalWrite(motor2pin2, HIGH);
+
+digitalWrite(motor3pin1,   LOW);
+  digitalWrite(motor3pin2, HIGH);
+
+  digitalWrite(motor4pin1, LOW);
+   digitalWrite(motor4pin2, HIGH);
   delay(3000);
 }
